@@ -268,4 +268,270 @@ span {
 .text-holder {
   margin-left: 50px;
 }
+
+.icons i {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #1ebeb6;
+}
+
+.department h4 {
+  color: #1ebeb6;
+  font-weight: 600;
+}
+
+.department h2 {
+  position: relative;
+}
+
+.department h2::before {
+  background: #1ebeb6 none repeat scroll 0 0;
+  bottom: 0;
+  top: 40px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+.us {
+  padding-right: 65px;
+}
+
+.single-item {
+  margin-top: 30px;
+}
+
+.single-item .items {
+  padding: 35px;
+  background: #ffffff;
+  text-align: center;
+  border: 2px solid #1ebeb6;
+}
+
+.single-item .items h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.appoinment-box .heading h3 {
+  position: relative;
+}
+
+.appoinment-box .heading h3::after {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  content: "";
+  height: 100%;
+  width: 30%;
+  background-image: url("../img/devider-light.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.appoinment-box form {
+  position: relative;
+  background: #1ebeb6;
+  padding: 60px 37px;
+  z-index: 1;
+}
+
+.appoinment-box form::after {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #1ebeb6;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.appoinment-box form input,
+.appoinment-box form select {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 25px;
+  color: #ffffff;
+}
+
+button {
+  padding: 12px 40px;
+  background: #ffffff;
+  color: #1ebeb6;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.inform {
+  padding: 20px 50px;
+  background: #ffffff;
+  position: relative;
+  top: 110px;
+  left: -140px;
+  border-bottom: 3px solid #1ebeb6;
+}
+
+.btn-gradient {
+  position: relative;
+  z-index: 1;
+  color: #ffffff !important;
+}
+
+.btn-gradient::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+          box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+}
+
+.btn {
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.btn i {
+  height: 30px;
+  background: #ffffff;
+  color: #1ebeb6;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+footer {
+  background: #001d4c;
+}
+
+footer .heald p {
+  color: #96aac1;
+}
+
+footer img {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+footer .assurance h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+footer .assurance ul {
+  list-style-type: none;
+}
+
+footer .assurance ul li i {
+  font-size: 30px;
+  min-width: 50px;
+  display: inline-block;
+}
+
+footer .department {
+  margin-top: 50px;
+}
+
+footer .department h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+footer .department ul li {
+  margin-bottom: 15px;
+  color: #96aac1;
+}
+
+footer .department ul li :last-child {
+  margin-bottom: 0;
+}
+
+footer .department ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #96aac1;
+}
+
+footer .useful-links {
+  margin-top: 50px;
+}
+
+footer .useful-links h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+footer .useful-links ul li {
+  margin-bottom: 15px;
+  color: #96aac1;
+}
+
+footer .useful-links ul li :last-child {
+  margin-bottom: 0;
+}
+
+footer .useful-links ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #96aac1;
+}
+
+footer .branch {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 37px;
+  border-bottom: 2px solid #1ebeb6;
+}
+
+footer .branch .central ul {
+  list-style-type: none;
+}
+
+footer .branch .central ul li {
+  margin-bottom: 20px;
+  color: #96aac1;
+}
+
+footer .branch .central ul li :last-child {
+  margin: 0;
+}
+
+footer .branch .central ul li b {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 900;
+}
 /*# sourceMappingURL=style.css.map */
