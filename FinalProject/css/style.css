@@ -1,7 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background-color: white;
+}
+
+#carouselExampleControls .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.text-holder .heart {
+  font-size: 150px;
+  opacity: 0.2;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  left: -150px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#carousel:hover .carousel-control-prev {
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: -150px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#carousel:hover .carousel-control-next {
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 p {
   color: #6c757d;
   font-size: 15px;
   font-weight: 600;
+}
+
+.padding-100 {
+  padding: 100px 0px;
 }
 
 p a {
@@ -275,6 +340,71 @@ span {
   font-size: 50px;
   margin-right: 20px;
   color: #1ebeb6;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #cccccc;
+}
+
+.owl-carousel .owl-dots .active span {
+  background: none !important;
+}
+
+.owl-carousel .owl-dots .active span:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  height: 5px;
+  width: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #1ebeb6;
+  border-radius: 50%;
+}
+
+.owl-carousel .items {
+  -webkit-box-shadow: 0 0 10px #e7e7e7;
+          box-shadow: 0 0 10px #e7e7e7;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.owl-carousel .items .img-box {
+  position: relative;
+  z-index: 1;
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.card-content {
+  position: relative;
+  margin: 29px;
+}
+
+.card-content::after {
+  position: absolute;
+  right: -50px;
+  bottom: -80px;
+  content: "";
+  height: 150px;
+  width: 150px;
+  background: url(../img/shape4.png);
+  background-size: contain;
+  z-index: -1;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  opacity: 0.3;
 }
 
 .department h4 {
