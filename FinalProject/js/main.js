@@ -38,18 +38,34 @@ $("#carouselExampleControls").on("slide.bs.carousel", function () {
   }
 });
 
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel.owl-theme").owlCarousel({
   loop: false,
-  margin: 40,
+  margin: 30,
   responsive: {
     0: {
       items: 1,
     },
     600: {
-      items: 3,
+      items: 2,
     },
     1000: {
       items: 3,
+    },
+  },
+});
+$(".owl-carousel.jrc").owlCarousel({
+  loop: true,
+  margin: 0,
+  dotsEach: 2,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 2.6,
     },
   },
 });

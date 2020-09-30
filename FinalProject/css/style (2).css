@@ -342,28 +342,6 @@ span {
   color: #1ebeb6;
 }
 
-.owl-something {
-  background-color: #f1ebeb;
-}
-
-.video a {
-  text-decoration: none;
-  position: relative;
-}
-
-.video a i::after {
-  position: absolute;
-  left: -6px;
-  top: -25px;
-  content: "";
-  height: 78px;
-  width: 80px;
-  background: #1ebeb6;
-  z-index: -1;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
 .owl-carousel .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +400,179 @@ span {
   z-index: 1;
   margin: 10px;
   margin-bottom: 0;
+}
+
+.card-content {
+  position: relative;
+  margin: 29px;
+}
+
+.card-content::after {
+  position: absolute;
+  right: -50px;
+  bottom: -80px;
+  content: "";
+  height: 150px;
+  width: 150px;
+  background: url(../img/shape4.png);
+  background-size: contain;
+  z-index: -1;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  opacity: 0.3;
+}
+
+.department h4 {
+  color: #1ebeb6;
+  font-weight: 600;
+}
+
+.department h2 {
+  position: relative;
+}
+
+.department h2::before {
+  background: #1ebeb6 none repeat scroll 0 0;
+  bottom: 0;
+  top: 40px;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+.us {
+  padding-right: 65px;
+}
+
+.single-item {
+  margin-top: 30px;
+}
+
+.single-item .items {
+  padding: 35px;
+  background: #ffffff;
+  text-align: center;
+  border: 2px solid #1ebeb6;
+}
+
+.single-item .items h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.appoinment-box .heading h3 {
+  position: relative;
+}
+
+.appoinment-box .heading h3::after {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  content: "";
+  height: 100%;
+  width: 30%;
+  background-image: url("../img/devider-light.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.appoinment-box form {
+  position: relative;
+  background: #1ebeb6;
+  padding: 60px 37px;
+  z-index: 1;
+}
+
+.appoinment-box form::after {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #1ebeb6;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.appoinment-box form input,
+.appoinment-box form select {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 25px;
+  color: #ffffff;
+}
+
+button {
+  padding: 12px 40px;
+  background: #ffffff;
+  color: #1ebeb6;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.inform {
+  padding: 20px 50px;
+  background: #ffffff;
+  position: relative;
+  top: 110px;
+  left: -140px;
+  border-bottom: 3px solid #1ebeb6;
+}
+
+.btn-gradient {
+  position: relative;
+  z-index: 1;
+  color: #ffffff !important;
+}
+
+.btn-gradient::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+          box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
+}
+
+.btn {
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.btn i {
+  height: 30px;
+  background: #ffffff;
+  color: #79dbd6;
+  line-height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 0;
+  margin-right: 5px;
 }
 
 #doctors {
@@ -503,6 +654,31 @@ span {
   font-size: 14px !important;
   color: grey;
   line-height: 25px;
+}
+
+.tab-pane .col-lg-6 .info a {
+  padding: 15px 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
+  background: linear-gradient(to right, #1ebeb6 0%, #00827c 100%);
+  border: 0px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: white;
+}
+
+.tab-pane .col-lg-6 .info a:hover {
+  text-decoration: none;
+}
+
+.tab-pane .col-lg-6 .info a i {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  color: #1ebeb6;
+  line-height: 28px;
+  padding-left: 12px;
+  margin-right: 5px;
 }
 
 #testimon .heading {
@@ -741,228 +917,6 @@ span {
   text-align: center;
 }
 
-.card-content {
-  position: relative;
-  margin: 29px;
-}
-
-.card-content::after {
-  position: absolute;
-  right: -50px;
-  bottom: -80px;
-  content: "";
-  height: 150px;
-  width: 150px;
-  background: url(../img/shape4.png);
-  background-size: contain;
-  z-index: -1;
-  background-repeat: no-repeat;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  opacity: 0.3;
-}
-
-.department h4 {
-  color: #1ebeb6;
-  font-weight: 600;
-}
-
-.department h2 {
-  position: relative;
-}
-
-.department h2::before {
-  background: #1ebeb6 none repeat scroll 0 0;
-  bottom: 0;
-  top: 40px;
-  content: "";
-  height: 2px;
-  left: 50%;
-  margin-left: -25px;
-  position: absolute;
-  width: 40px;
-}
-
-.us {
-  padding-right: 65px;
-}
-
-.single-item {
-  margin-top: 30px;
-}
-
-.single-item .items {
-  padding: 35px;
-  background: #ffffff;
-  text-align: center;
-  border: 2px solid #1ebeb6;
-}
-
-.single-item .items h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.appoinment-box .heading h3 {
-  position: relative;
-}
-
-.appoinment-box .heading h3::after {
-  position: absolute;
-  left: 50%;
-  bottom: -60px;
-  content: "";
-  height: 100%;
-  width: 30%;
-  background-image: url("../img/devider-light.png");
-  background-repeat: no-repeat;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.appoinment-box form {
-  position: relative;
-  background: #1ebeb6;
-  padding: 60px 37px;
-  z-index: 1;
-}
-
-.appoinment-box form::after {
-  position: absolute;
-  left: -30px;
-  top: -30px;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #1ebeb6;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-.appoinment-box form input,
-.appoinment-box form select {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0 25px;
-  color: #ffffff;
-}
-
-button {
-  padding: 12px 40px;
-  background: #ffffff;
-  color: #1ebeb6;
-  border: none;
-  font-weight: 600;
-  width: 100%;
-  border-radius: 30px;
-}
-
-.inform {
-  padding: 20px 50px;
-  background: #ffffff;
-  position: relative;
-  top: 110px;
-  left: -140px;
-  border-bottom: 3px solid #1ebeb6;
-}
-
-.btn-gradient {
-  position: relative;
-  z-index: 1;
-  color: #ffffff !important;
-}
-
-.btn-gradient::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
-  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  z-index: -1;
-  -webkit-box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
-          box-shadow: 0 0 10px rgba(255, 136, 0, 0.5), inset 0 0 1px 1px #1ebeb6;
-}
-
-.btn {
-  font-weight: 700;
-  line-height: 25px;
-  text-transform: capitalize;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  overflow: hidden;
-  border-radius: 5px;
-  font-size: 17px;
-}
-
-.btn i {
-  height: 30px;
-  background: #ffffff;
-  color: #79dbd6;
-  line-height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin-left: 0;
-  margin-right: 5px;
-}
-
-.cardiologist ul li {
-  position: relative;
-}
-
-.cardiologist ul li a {
-  display: block;
-  background: #19c9c0;
-  color: #ffffff;
-}
-
-.cardiologist ul li a i {
-  font-size: 45px;
-  min-width: 50px;
-  margin-right: 15px;
-}
-
-.cardiologist ul li a span {
-  color: #ffffff;
-}
-
-.info-box {
-  padding: 30px 40px;
-  background: #ffffff;
-  position: relative;
-  z-index: 1;
-}
-
-.info-box::after {
-  position: absolute;
-  left: -15px;
-  top: 30px;
-  content: "";
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #ffffff;
-}
-
-.info-box span {
-  display: block;
-  margin-bottom: 15px;
-  color: #1ebeb6;
-}
-
-.info-box p {
-  color: #666666;
-  margin: 0 0 15px;
-  font-weight: 400;
-}
-
 .item-area {
   position: relative;
 }
@@ -1141,10 +1095,6 @@ footer {
   background: #001d4c;
 }
 
-footer .heald {
-  padding-top: 43px;
-}
-
 footer .heald p {
   color: #96aac1;
 }
@@ -1249,36 +1199,6 @@ footer .branch .central ul li b {
   font-weight: 900;
 }
 
-footer .footer-end {
-  background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px 0;
-  padding-bottom: 0;
-}
-
-footer .footer-end .social a {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-footer .footer-end .social a p {
-  padding-right: 20px;
-}
-
-footer .footer-end .copyright p {
-  color: white;
-}
-
-footer .footer-end .copyright a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-footer .footer-end b {
-  color: white;
-}
-
 @media only screen and (max-width: 762px) {
   .nav button.navbar-toggler {
     width: 50px !important;
@@ -1290,4 +1210,4 @@ footer .footer-end b {
     font-size: 15px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style (2).css.map */
