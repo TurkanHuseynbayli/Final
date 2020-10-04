@@ -94,6 +94,7 @@ li a:hover {
 .dropdown:hover .dropdown-menu {
   position: relative;
   display: block;
+  top: 33px;
 }
 
 .dropdown:hover i {
@@ -576,49 +577,6 @@ span {
   line-height: 25px;
 }
 
-#testimon .heading {
-  padding: 108px;
-  width: 660px;
-  height: 660px;
-  background: #1ebeb6;
-  padding-top: 233px;
-}
-
-#testimon .heading h5 {
-  color: white;
-  font-weight: 700;
-  margin-bottom: 25px;
-  position: relative;
-}
-
-#testimon .heading h2 {
-  color: white;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-#testimon .heading i::after {
-  position: absolute;
-  left: 173px;
-  top: 211px;
-  content: "\f10d";
-  font-weight: 600;
-  font-size: 120px;
-  opacity: 0.2;
-  color: #ffffff;
-}
-
-#testimon .btn {
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  color: #233645;
-}
-
-#testimon .btn i {
-  background: #1ebeb6;
-  color: #ffffff;
-}
-
 #testimon {
   overflow: hidden;
 }
@@ -812,27 +770,6 @@ span {
   text-align: center;
 }
 
-.card-content {
-  position: relative;
-  margin: 29px;
-}
-
-.card-content::after {
-  position: absolute;
-  right: -50px;
-  bottom: -80px;
-  content: "";
-  height: 150px;
-  width: 150px;
-  background: url(../img/shape4.png);
-  background-size: contain;
-  z-index: -1;
-  background-repeat: no-repeat;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  opacity: 0.3;
-}
-
 .department h4 {
   color: #1ebeb6;
   font-weight: 600;
@@ -1009,55 +946,6 @@ span {
   border-radius: 50%;
   margin-left: 0;
   margin-right: 5px;
-}
-
-.cardiologist ul li {
-  position: relative;
-}
-
-.cardiologist ul li a {
-  display: block;
-  background: #19c9c0;
-  color: #ffffff;
-}
-
-.cardiologist ul li a i {
-  font-size: 45px;
-  min-width: 50px;
-  margin-right: 15px;
-}
-
-.cardiologist ul li a span {
-  color: #ffffff;
-}
-
-.info-box {
-  padding: 30px 40px;
-  background: #ffffff;
-  position: relative;
-  z-index: 1;
-}
-
-.info-box::after {
-  position: absolute;
-  left: -15px;
-  top: 30px;
-  content: "";
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #ffffff;
-}
-
-.info-box span {
-  display: block;
-  margin-bottom: 15px;
-  color: #1ebeb6;
-}
-
-.info-box p {
-  color: #666666;
-  margin: 0 0 15px;
-  font-weight: 400;
 }
 
 .item-area {
@@ -1416,6 +1304,10 @@ footer .footer-end b {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .inform {
+    left: 0;
+    top: 0;
   }
 }
 
