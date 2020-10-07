@@ -142,6 +142,8 @@ li {
 .text-holder .heart {
   font-size: 150px;
   opacity: 0.2;
+  position: absolute;
+  bottom: 203px;
 }
 .carousel-control-prev {
   position: absolute;
@@ -237,6 +239,38 @@ h4 {
 }
 
 .item {
+  i {
+    &::after {
+      position: absolute;
+      left: -15px;
+      top: -10px;
+      content: "";
+      height: 120px;
+      width: 120px;
+      background: url("../img/3.svg");
+      background-size: contain;
+      z-index: -2;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.item {
+  i {
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #1ebeb6;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.item {
   text-align: center;
   ul {
     li {
@@ -256,6 +290,11 @@ h4 {
 
 span {
   color: #6c757d;
+}
+.imga-holder {
+  img {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
 }
 .image-holder {
   position: relative;
@@ -1199,6 +1238,10 @@ footer {
 
 //responsiv start
 @media only screen and (max-width: 991px) {
+  .text-holder {
+    left: 0 !important;
+    top: 92px !important;
+  }
   footer {
     .department {
       align-items: flex-start !important;
@@ -1451,8 +1494,6 @@ footer {
 // blog.html end
 // section count start
 #count {
-  background: url(../img/7.png),
-    linear-gradient(90deg, rgba(30, 190, 182, 1) 0%, rgba(0, 130, 124, 1) 100%);
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1612,3 +1653,144 @@ footer {
   }
 }
 //section owl-something end
+
+.tags {
+  .tag {
+    a {
+      i {
+        margin-left: 715px;
+      }
+    }
+  }
+}
+.patient {
+  blockquote {
+    position: relative;
+    z-index: 1;
+    border: none;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #f7f7f7;
+    padding: 50px 30px;
+    border-left: 3px solid #1ebeb6;
+    font-style: italic;
+    padding-top: 100px;
+    ::before {
+      position: absolute;
+      left: 30px;
+      content: "\f10d";
+      font-family: "Font Awesome 5 Free";
+      color: #1ebeb6;
+      font-size: 40px;
+      top: 50px;
+      font-weight: 600;
+    }
+  }
+  .post {
+    a {
+      display: inline-block;
+      font-weight: 800;
+      text-transform: capitalize;
+      color: #1ebeb6;
+      padding: 8px 30px;
+      border: 2px solid;
+      border-radius: 30px;
+    }
+  }
+}
+
+.post-process {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .analysis {
+    a {
+      background: #f7f7f7;
+      padding: 10px 15px;
+      font-size: 14px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: black;
+    }
+  }
+}
+
+.social {
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+}
+.comments {
+  h4 {
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+  }
+}
+.comment-item {
+  .comment-inf {
+    a {
+      margin-left: 113px;
+      border: 1px solid #e7e7e7;
+      color: #002359;
+      display: inline-block;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 1px 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .images {
+    img {
+      float: left;
+      height: 105px;
+      width: 105px;
+    }
+  }
+  .content {
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+  }
+  .btn-suc {
+    padding: 12px 40px;
+    background: #ffffff;
+    color: #1ebeb6;
+    border: none;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+.form-group {
+  button {
+    background: linear-gradient(
+      90deg,
+      rgba(30, 190, 182, 1) 0%,
+      rgba(0, 130, 124, 1) 100%
+    );
+
+    color: #ffffff;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 20px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+  }
+}
