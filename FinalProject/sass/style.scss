@@ -327,6 +327,13 @@ span {
 //  section main END
 
 // section third start
+.three {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 0;
+  opacity: 0.1;
+}
 .our-video {
   position: absolute;
   right: 0;
@@ -399,6 +406,22 @@ span {
 // section third end
 
 //section services start
+.serv {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  margin-bottom: -120px;
+  opacity: 0.08;
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
 .owl-something {
   background-color: #f7f7f7;
 }
@@ -865,14 +888,43 @@ span {
   }
 }
 //section clinic start
-.inform {
-  padding: 20px 50px;
-  background: #ffffff;
-  position: relative;
-  top: 110px;
-  left: -140px;
-  border-bottom: 3px solid #1ebeb6;
+.dotted {
+  &::after {
+    position: absolute;
+    right: 32px;
+    top: -48px;
+    content: "";
+    height: 300px;
+    width: 300px;
+    background: url("../img/dot.png");
+    z-index: 0;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 }
+.inform {
+  padding: 29px 50px;
+  background: #ffffff;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+  left: -128px;
+  top: 12%;
+  border-bottom: 3px solid #1ebeb6;
+  z-index: 1;
+  // &::after{
+  //   position: absolute;
+  //   right: -120px;
+  //   top: -120px;
+  //   content: "";
+  //   height: 300px;
+  //   width: 300px;
+  //   background: url("../img/dot.png");
+  //   z-index: -1;
+  //   background-repeat: no-repeat;
+  //   opacity: 0.2;
+  // }
+}
+
 //section clinic end
 //btn-gradient start
 .btn-gradient {
@@ -966,11 +1018,12 @@ span {
 
     ul {
       li {
-        display: inline-block;
-        margin-bottom: 5px;
-        position: relative;
-        z-index: 1;
-        padding-right: 5px;
+        // display: inline-block;
+        // margin-bottom: 5px;
+        // position: relative;
+        // z-index: 1;
+        // padding-right: 5px;
+        display: flex;
         .health {
           &::after {
             position: absolute;
@@ -1655,15 +1708,30 @@ footer {
 //section owl-something end
 
 .tags {
-  .tag {
-    a {
-      i {
-        margin-left: 715px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      .health {
+        position: relative;
+        &::after {
+          position: absolute;
+          right: -14px !important;
+          bottom: 0;
+          content: ",";
+          font-weight: 600;
+        }
       }
+      // .patient {
+      //   // margin-left: -527px;
+      // }
     }
   }
 }
 .patient {
+  box-shadow: 0 0 10px #e7e7e7;
+  margin-bottom: 68px;
   blockquote {
     position: relative;
     z-index: 1;
@@ -1696,6 +1764,7 @@ footer {
       padding: 8px 30px;
       border: 2px solid;
       border-radius: 30px;
+      text-decoration: none;
     }
   }
 }
@@ -1704,6 +1773,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 35px;
   .analysis {
     a {
       background: #f7f7f7;
@@ -1713,15 +1783,54 @@ footer {
       margin-bottom: 5px;
       display: inline-block;
       color: black;
+      text-decoration: none;
     }
   }
+}
+.lists {
+  li {
+    position: relative;
+    margin-bottom: 15px;
+    color: #232323;
+    position: relative;
+    z-index: 1;
+    padding-left: 18px;
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 11px;
+      content: "";
+      background: #666666;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+    }
+  }
+}
+.post2 {
+  color: #666666;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .social {
   ul {
     li {
       display: inline-block;
-      margin-left: 15px;
+      margin-right: -25px;
+      .fa-facebook-f {
+        color: #3b5998;
+      }
+      .fa-twitter {
+        color: #1da1f2;
+      }
+      .fa-pinterest-p {
+        color: #bd081c;
+      }
+      .fa-linkedin-in {
+        color: #0077b5;
+      }
     }
   }
 }
@@ -1733,8 +1842,12 @@ footer {
     padding-bottom: 25px;
   }
 }
+.spart {
+  padding-left: 80px;
+}
 .comment-item {
   .comment-inf {
+    margin-bottom: 54px;
     a {
       margin-left: 113px;
       border: 1px solid #e7e7e7;
@@ -1742,25 +1855,47 @@ footer {
       display: inline-block;
       font-size: 12px;
       margin-top: 5px;
-      padding: 1px 10px;
+      padding: 9px 17px;
       text-transform: uppercase;
       font-weight: 600;
+      &:hover {
+        text-decoration: none;
+        color: #1ebeb6;
+        transition: all 0.35s ease-in-out;
+      }
     }
   }
 
   .images {
+    float: left;
+    height: 105px;
+    width: 105px;
+
     img {
       float: left;
-      height: 105px;
-      width: 105px;
+      height: 80px;
+      width: 80px;
     }
   }
   .content {
+    p {
+      color: #666666;
+      margin: 0 0 15px;
+      text-transform: none;
+      font-weight: 400;
+    }
     .title {
       display: flex;
       align-items: center;
       margin-bottom: 15px;
       font-weight: 700;
+      h5 {
+        margin-right: 15px;
+      }
+      span {
+        margin-right: 15px;
+        margin-top: -8px;
+      }
     }
   }
   .btn-suc {
