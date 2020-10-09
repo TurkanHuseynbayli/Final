@@ -801,6 +801,7 @@ span {
     }
   }
 }
+
 // section services end
 
 //section consultation start
@@ -911,18 +912,6 @@ span {
   top: 12%;
   border-bottom: 3px solid #1ebeb6;
   z-index: 1;
-  // &::after{
-  //   position: absolute;
-  //   right: -120px;
-  //   top: -120px;
-  //   content: "";
-  //   height: 300px;
-  //   width: 300px;
-  //   background: url("../img/dot.png");
-  //   z-index: -1;
-  //   background-repeat: no-repeat;
-  //   opacity: 0.2;
-  // }
 }
 
 //section clinic end
@@ -1018,11 +1007,6 @@ span {
 
     ul {
       li {
-        // display: inline-block;
-        // margin-bottom: 5px;
-        // position: relative;
-        // z-index: 1;
-        // padding-right: 5px;
         display: flex;
         .health {
           &::after {
@@ -1100,6 +1084,7 @@ span {
     }
     textarea {
       min-height: 150px;
+      border: none !important;
     }
     a {
       border-radius: 30px;
@@ -1181,10 +1166,11 @@ footer {
     }
 
     ul {
+      padding: 9px;
       li {
-        margin-bottom: 15px;
-
+        padding-bottom: 16px;
         color: #96aac1;
+        margin: -3px;
         :last-child {
           margin-bottom: 0;
         }
@@ -1333,7 +1319,11 @@ footer {
       }
     }
   }
+  #consultation {
+    margin-top: 179px !important;
+  }
 }
+
 @media only screen and (max-width: 767px) {
   .nav {
     .container {
@@ -1368,6 +1358,9 @@ footer {
   .inform {
     left: 0;
     top: 0;
+  }
+  #consultation {
+    margin-top: 820px !important;
   }
 }
 
@@ -1437,6 +1430,28 @@ footer {
 }
 // doctor.html end
 // about.html start
+.inform {
+  ul {
+    li {
+      float: left;
+      padding: 0 15px;
+      width: 50%;
+      margin-top: 20px;
+      padding-left: 35px;
+      position: relative;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        color: #1ebeb6;
+        font-weight: 600;
+      }
+    }
+  }
+}
 .single-item {
   margin-bottom: 30px;
   .item-doc {
@@ -1706,7 +1721,7 @@ footer {
   }
 }
 //section owl-something end
-
+// blog.single.html start
 .tags {
   ul {
     display: flex;
@@ -1723,9 +1738,6 @@ footer {
           font-weight: 600;
         }
       }
-      // .patient {
-      //   // margin-left: -527px;
-      // }
     }
   }
 }
@@ -1929,3 +1941,5 @@ footer {
     border-radius: 30px;
   }
 }
+
+// blog.single.html start

@@ -1138,6 +1138,7 @@ span {
 
 #address .form textarea {
   min-height: 150px;
+  border: none !important;
 }
 
 #address .form a {
@@ -1226,9 +1227,14 @@ footer .department h4 {
   color: white;
 }
 
+footer .department ul {
+  padding: 9px;
+}
+
 footer .department ul li {
-  margin-bottom: 15px;
+  padding-bottom: 16px;
   color: #96aac1;
+  margin: -3px;
 }
 
 footer .department ul li :last-child {
@@ -1359,6 +1365,9 @@ footer .footer-end b {
   #testimon .test-head::after {
     height: 600% !important;
   }
+  #consultation {
+    margin-top: 179px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1391,6 +1400,9 @@ footer .footer-end b {
   .inform {
     left: 0;
     top: 0;
+  }
+  #consultation {
+    margin-top: 820px !important;
   }
 }
 
@@ -1463,6 +1475,26 @@ footer .footer-end b {
 
 .doctor-list .col-lg-8 ul li a i {
   margin-right: 5px;
+}
+
+.inform ul li {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+  margin-top: 20px;
+  padding-left: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.inform ul li::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  color: #1ebeb6;
+  font-weight: 600;
 }
 
 .single-item {
