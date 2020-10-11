@@ -1330,82 +1330,6 @@ footer .footer-end b {
   color: white;
 }
 
-@media only screen and (max-width: 991px) {
-  .text-holder {
-    left: 0 !important;
-    top: 92px !important;
-  }
-  footer .department {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-  }
-  footer .department ul {
-    padding-left: 0px !important;
-  }
-  footer .useful-links ul {
-    padding-left: 0px !important;
-  }
-  .footer-end .copyright {
-    text-align: center !important;
-  }
-  .footer-end .social {
-    text-align: center !important;
-  }
-  #testimon .test-head h2 {
-    font-size: 20px !important;
-  }
-  #testimon .test-head::before {
-    position: absolute;
-    left: 50% !important;
-    -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
-    top: -100px !important;
-  }
-  #testimon .test-head::after {
-    height: 600% !important;
-  }
-  #consultation {
-    margin-top: 179px !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .nav .container button.navbar-toggler {
-    width: 50px !important;
-  }
-  .nav li a {
-    padding: 20px;
-    color: #233645;
-    font-weight: 700;
-    font-size: 15px;
-  }
-  header {
-    display: none;
-  }
-  .emergency {
-    display: none;
-  }
-  #third .our-video {
-    position: relative !important;
-    left: 0px !important;
-    bottom: 0px !important;
-  }
-  #third .items {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-  }
-  .inform {
-    left: 0;
-    top: 0;
-  }
-  #consultation {
-    margin-top: 820px !important;
-  }
-}
-
 .doctor-list {
   background: url(../img/7.png), -webkit-gradient(linear, left top, right top, from(#1ebeb6), to(#00827c));
   background: url(../img/7.png), linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
@@ -2024,5 +1948,81 @@ footer .footer-end b {
   text-transform: uppercase;
   border: none;
   border-radius: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .text-holder {
+    left: 0 !important;
+    top: 92px !important;
+  }
+  footer .department {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  footer .department ul {
+    padding-left: 0px !important;
+  }
+  footer .useful-links ul {
+    padding-left: 0px !important;
+  }
+  .footer-end .copyright {
+    text-align: center !important;
+  }
+  .footer-end .social {
+    text-align: center !important;
+  }
+  #testimon .test-head h2 {
+    font-size: 20px !important;
+  }
+  #testimon .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimon .test-head::after {
+    height: 600% !important;
+  }
+  #consultation {
+    margin-top: 179px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav .container button.navbar-toggler {
+    width: 50px !important;
+  }
+  .nav li a {
+    padding: 20px;
+    color: #233645;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  header {
+    display: none;
+  }
+  .emergency {
+    display: none;
+  }
+  #third .our-video {
+    position: relative !important;
+    left: 0px !important;
+    bottom: 0px !important;
+  }
+  #third .items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .inform {
+    left: 0;
+    top: 0;
+  }
+  #consultation {
+    margin-top: 820px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

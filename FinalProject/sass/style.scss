@@ -1275,96 +1275,6 @@ footer {
 }
 //footer end
 
-//responsiv start
-@media only screen and (max-width: 991px) {
-  .text-holder {
-    left: 0 !important;
-    top: 92px !important;
-  }
-  footer {
-    .department {
-      align-items: flex-start !important;
-      ul {
-        padding-left: 0px !important;
-      }
-    }
-    .useful-links {
-      ul {
-        padding-left: 0px !important;
-      }
-    }
-  }
-  .footer-end {
-    .copyright {
-      text-align: center !important;
-    }
-    .social {
-      text-align: center !important;
-    }
-  }
-  #testimon {
-    .test-head {
-      h2 {
-        font-size: 20px !important;
-      }
-      &::before {
-        position: absolute;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        top: -100px !important;
-      }
-
-      &::after {
-        height: 600% !important;
-      }
-    }
-  }
-  #consultation {
-    margin-top: 179px !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .nav {
-    .container {
-      button.navbar-toggler {
-        width: 50px !important;
-      }
-    }
-
-    li a {
-      padding: 20px;
-      color: #233645;
-      font-weight: 700;
-      font-size: 15px;
-    }
-  }
-  header {
-    display: none;
-  }
-  .emergency {
-    display: none;
-  }
-  #third {
-    .our-video {
-      position: relative !important;
-      left: 0px !important ;
-      bottom: 0px !important;
-    }
-    .items {
-      flex-direction: column !important;
-    }
-  }
-  .inform {
-    left: 0;
-    top: 0;
-  }
-  #consultation {
-    margin-top: 820px !important;
-  }
-}
-
-//responsiv end
 // doctor.html start
 .doctor-list {
   background: url(../img/7.png),
@@ -1942,4 +1852,95 @@ footer {
   }
 }
 
-// blog.single.html start
+// blog.single.html end
+
+//responsiv start
+@media only screen and (max-width: 991px) {
+  .text-holder {
+    left: 0 !important;
+    top: 92px !important;
+  }
+  footer {
+    .department {
+      align-items: flex-start !important;
+      ul {
+        padding-left: 0px !important;
+      }
+    }
+    .useful-links {
+      ul {
+        padding-left: 0px !important;
+      }
+    }
+  }
+  .footer-end {
+    .copyright {
+      text-align: center !important;
+    }
+    .social {
+      text-align: center !important;
+    }
+  }
+  #testimon {
+    .test-head {
+      h2 {
+        font-size: 20px !important;
+      }
+      &::before {
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -100px !important;
+      }
+
+      &::after {
+        height: 600% !important;
+      }
+    }
+  }
+  #consultation {
+    margin-top: 179px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    .container {
+      button.navbar-toggler {
+        width: 50px !important;
+      }
+    }
+
+    li a {
+      padding: 20px;
+      color: #233645;
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+  header {
+    display: none;
+  }
+  .emergency {
+    display: none;
+  }
+  #third {
+    .our-video {
+      position: relative !important;
+      left: 0px !important ;
+      bottom: 0px !important;
+    }
+    .items {
+      flex-direction: column !important;
+    }
+  }
+  .inform {
+    left: 0;
+    top: 0;
+  }
+  #consultation {
+    margin-top: 820px !important;
+  }
+}
+
+//responsiv end
